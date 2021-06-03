@@ -1,6 +1,14 @@
 #!/usr/bin/env bash
 
 echo Running....
+
+if [ $(python3 name_check.py) = 0 ]; then
+	echo "all ts files names printed"
+else
+	echo "Missing Name and ID on some files!"
+	exit 1
+fi
+
 npm install
 npm run build
  
