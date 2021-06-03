@@ -1,3 +1,6 @@
+// Name: Zachary Cui
+// Student ID: 1364880
+
 export const categories = {
   cooks: "Cookbooks",
   database: "Database",

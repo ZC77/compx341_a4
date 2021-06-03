@@ -1,3 +1,6 @@
+// Name: Zachary Cui
+// Student ID: 1364880
+
 export default {
   apiGateway: {
     REGION: "us-east-1",
