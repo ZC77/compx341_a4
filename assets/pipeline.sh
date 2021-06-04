@@ -24,9 +24,11 @@ if [ $? -eq 0 ]; then
 	echo "All tests successful!"
 	
 	else
-	echp "Application tests failed."
+	echo "Application tests failed."
+	exit 1
 	fi
 
 else
 	echo "Name and ID check failed"
+	exit 1
 fi
