@@ -64,10 +64,10 @@ export default class PastPurchases extends Component<PastPurchasesProps, PastPur
         <CategoryNavBar />
         <div className="well-bs col-md-12">
           {this.state.userInfo && <div className="white-box no-margin-top">
-            <h3>{`Hello ${this.state.userInfo.attributes.email}!`}</h3>
+            <h3 id="Email">{`Hello ${this.state.userInfo.attributes.email}!`}</h3>
           </div>}
           <div className="white-box">
-            <h3>Past purchases</h3>
+            <h3 id="Header">Past purchases</h3>
           </div>
           {!this.state.isLoading && this.state.orders && this.state.orders
             .sort((order1, order2) => order2.orderDate - order1.orderDate)
