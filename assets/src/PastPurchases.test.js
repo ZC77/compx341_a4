@@ -12,9 +12,9 @@ const pp = shallow(<PastPurchases />)
 const testEmail = "test@amazon.com"
 
 
-/*test("Has correct header (Past purchases)", () => {
+test("Has correct header (Past purchases)", () => {
     expect(pp.find('#Header').text()).toEqual('Past purchases');
-})*/
+})
 
 test("Email correctly displayed", () => {
     pp.setState({userInfo: {attributes: {email: testEmail}}})
