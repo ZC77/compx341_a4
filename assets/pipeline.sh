@@ -13,12 +13,20 @@ npm install
 npm run build
  
 if [ $? -eq 0 ]; then
+
+	npm run test
+	if [ $? -eq 0 ]; then
 	cd ..
 	git add *
 	git commit -m "$1"
 	git push origin master
 	git status
-	echo "success!"
+	echo "All tests successful!"
+	
+	else
+	echp "Application tests failed."
+	fi
+
 else
-	echo "Fail"
+	echo "Name and ID check failed"
 fi
